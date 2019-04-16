@@ -1,0 +1,49 @@
+@media screen and (max-width: 1000px) {
+	.wrap {
+		margin: 0px 50px 0px 50px;
+		width: auto;
+	}
+
+	article,
+	article:nth-child(odd) {
+		flex-direction: column;
+	}
+
+	section article img {
+		height: 200px;
+	}
+}
+
+@media screen and (max-width: 700px) {
+
+	.wrap {
+		margin: 0px 0px 0px 0px;
+		width: auto;
+	}
+
+	header {
+		font-family: "AgeoPersonalUse";
+		padding: 0px 20px 0px 20px;
+	}
+
+	.right {
+		float: initial;
+		top: 0px;
+	}
+
+	header a{
+		margin: auto auto;
+		}
+
+
+	header {
+		font-family: "AgeoPersonalUse-Light";
+		font-size: 15px;
+		padding: 0px 20px 0px 20px;
+	}
+
+	header span {
+		display: none;
+	}
+}
+

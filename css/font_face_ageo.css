@@ -1,0 +1,40 @@
+@font-face {
+	font-family: "AgeoPersonalUse-Thin";
+	src: url("../fonts/AgeoPersonalUse-Thin.otf");
+}
+
+@font-face {
+	font-family: "AgeoPersonalUse-Light";
+	src: url("../fonts/AgeoPersonalUse-Light.otf");
+}
+
+@font-face {
+	font-family: "AgeoPersonalUse";
+	src: url("../fonts/AgeoPersonalUse.otf");
+}
+
+@font-face {
+	font-family: "AgeoPersonalUse-Medium";
+	src: url("../fonts/AgeoPersonalUse-Medium.otf");
+}
+
+@font-face {
+	font-family: "AgeoPersonalUse-SemiBold";
+	src: url("../fonts/AgeoPersonalUse-SemiBold.otf");
+}
+
+@font-face {
+	font-family: "AgeoPersonalUse-Bold";
+	src: url("../fonts/AgeoPersonalUse-Bold.otf");
+}
+
+@font-face {
+	font-family: "AgeoPersonalUse-ExtraBold";
+	src: url("../fonts/AgeoPersonalUse-ExtraBold.otf");
+}
+
+@font-face {
+	font-family: "AgeoPersonalUse-Heavy";
+	src: url("../fonts/AgeoPersonalUse-Heavy.otf");
+}
+
