@@ -1,0 +1,25 @@
+@media screen and (max-width: 1000px) {
+	.wrap {
+		margin: 0px 50px 0px 50px;
+		width: auto;
+	}
+}
+
+@media screen and (max-width: 700px) {
+
+	.wrap {
+		margin: 0px 0px 0px 0px;
+		width: auto;
+	}
+
+	header {
+		font-family: "AgeoPersonalUse";
+		padding: 0px 20px 0px 20px;
+	}
+	article div {
+		  flex-grow: 4; 
+	}
+	header span {
+		display: none;
+	}
+}
