@@ -25,25 +25,28 @@
 		width: auto;
 	}
 
-	header {
-		font-family: "AgeoPersonalUse";
-		padding: 0px 20px 0px 20px;
-	}
-
 	.right {
 		float: initial;
 		top: 0px;
 	}
 
-	header a{
-		margin: auto auto;
-		}
 
 
 	header {
 		font-family: "AgeoPersonalUse-Light";
 		font-size: 15px;
 		padding: 0px 20px 0px 20px;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+
+	}
+
+	header a {
+		margin: auto auto;
+	}
+
+	header menu {
 	}
 
 	header span {
