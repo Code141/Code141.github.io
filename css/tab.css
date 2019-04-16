@@ -1,0 +1,49 @@
+
+a.nav-link {
+  background: linear-gradient(25deg,  #c6daec 75% ,   #fff );
+  text-align: center;
+}
+
+i.fas, i.fab {
+  font-size: 2vw;
+  margin: 2px;
+}
+
+li.nav-item {
+  margin: 5px;
+}
+
+a.nav-link:hover {
+  color:  #c6daec;
+}
+
+@media screen and (max-width: 800px) {
+
+  li.nav-item {
+    margin: 5px;
+    width: 35%
+  }
+
+  i.fas, i.fab {
+    font-size: 3vw;
+  }
+
+}
+
+
+@media screen and (max-width: 500px) {
+
+  section.recent_update_area {
+    padding: 0;
+    padding-top: 5vh; 
+  } 
+
+  section.recent_update_area div.container {
+    margin: 0;
+    width: 100%;
+    max-width: unset;
+  }
+
+  ul.myTab {
+    width: 100%;
+  }
