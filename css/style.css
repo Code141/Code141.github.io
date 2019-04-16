@@ -6,19 +6,23 @@
 #c6daec
 */
 
-body {
-	background-color: #19496b;
-	font-family: "AgeoPersonalUse-Light";
-}
-
-.wrap {
-	margin: 0 auto;
-	width: 90%;
+::first-letter {
+	text-transform: uppercase;
 }
 
 :target {			/* CSS HACK TO BYPASS HEADER SIZE FOR HANCOR*/
     padding-top: 70px; 
     margin-top: -70px; 
+}
+
+body {
+	background-color: #19496b;
+	font-family: sans-serif;
+}
+
+.wrap {
+	margin: 0 auto;
+	width: 1000px;
 }
 
 a {
@@ -39,7 +43,7 @@ h1 {
 }
 
 h2 {
-	color: #19496b;
+	color: #2c9dde;
 	font-family: "AgeoPersonalUse-Light";
 	font-size: 25px;
 }
@@ -52,10 +56,6 @@ hr {
 	width: 70%;
 }
 
-p::first-letter {
-	text-transform: uppercase;
-}
-
 article p {
 	margin-top: 30px;
 	font-size: 1.05em;
@@ -63,7 +63,7 @@ article p {
 
 article p span {
 	color: #19bbd5;
-	font-family: "AgeoPersonalUse-Bold";
+	font-weight: bold;
 }
 
 /*----------------------------------------------------------------------------*\
@@ -108,14 +108,15 @@ menu {
 \*----------------------------------------------------------------------------*/
 
 main {
-	font-family: "AgeoPersonalUse";
 	background-color: #f8f8f8;
 	box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.9);
 }
 
-img#top {
-	width:100%;
+#tagline {
 	margin: 0px 0px 20px 0px;
+	background-image: url('../media/BGC2.jpg');
+	background-position: center;
+	height: 300px;
 }
 
 main section {
@@ -138,6 +139,7 @@ article + article{
 article div{
 	margin: auto auto;
 	text-align: left;
+	max-width: 600px;
 }
 
 article img {
@@ -154,6 +156,7 @@ article div {
 
 article div p{
 	opacity: 0.6;
+	text-align: justify;
 }
 
 article div p + p{
@@ -213,10 +216,6 @@ section#team p.post {
 	margin-top: 5px;
 	margin-bottom: 10px;
 	color: rgba(0, 0, 0, 0.7);
-}
-
-div#tel {
-	font-family: sans-serif;
 }
 
 footer
