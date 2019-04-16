@@ -4,7 +4,7 @@
 #19bbd5
 #00e1c6
 #c6daec
- */
+*/
 
 body {
 	background-color: #19496b;
@@ -16,9 +16,7 @@ body {
 	width: 900px;
 }
 
-/* CSS HACK TO BYPASS HEADER SIZE FOR HANCOR*/
-
-:target {
+:target {			/* CSS HACK TO BYPASS HEADER SIZE FOR HANCOR*/
     padding-top: 70px; 
     margin-top: -70px; 
 }
@@ -28,24 +26,8 @@ a {
 	text-decoration: none;
 }
 
-.right {
-	float: right;
-	position: relative;
-	top: 32px;
-}
-
 a:hover {
 	color: #00e1c6;
-}
-
-p {
-	margin-top: 30px;
-	font-size: 1.05em;
-}
-
-p::first-letter {
-	font-family: "AgeoPersonalUse";
-	text-transform: uppercase;
 }
 
 h1 {
@@ -70,17 +52,24 @@ hr {
 	width: 70%;
 }
 
+p {
+	margin-top: 30px;
+	font-size: 1.05em;
+}
+
+p::first-letter {
+	font-family: "AgeoPersonalUse";
+	text-transform: uppercase;
+}
+
 p span {
 	color: #19bbd5;
 	font-family: "AgeoPersonalUse-Bold";
 }
 
-
-img#top {
-	width:100%;
-	margin: 0px 0px 20px 0px;
-}
-
+/*----------------------------------------------------------------------------*\
+|       HEADER                                                                 |
+\*----------------------------------------------------------------------------*/
 
 header {
 	z-index: 1000;
@@ -92,6 +81,7 @@ header {
 	top:0px;
 	font-family: "AgeoPersonalUse-SemiBold";
 	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+	display:flex;
 }
 
 header a
@@ -105,10 +95,18 @@ header div#title {
 	margin-top: 10px;
 }
 
+.right {
+	float: right;
+	position: relative;
+}
+
 menu {
 	display: inline-block;
-	width: 100%;
 }
+
+/*----------------------------------------------------------------------------*\
+|       MAIN                                                                   |
+\*----------------------------------------------------------------------------*/
 
 main {
 	font-family: "AgeoPersonalUse";
@@ -116,10 +114,19 @@ main {
 	box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.9);
 }
 
+img#top {
+	width:100%;
+	margin: 0px 0px 20px 0px;
+}
+
 main section {
 	padding: 30px 40px 30px 40px;
 	text-align: justify;
 }
+
+/*----------------------------------------------------------------------------*\
+|       ARTICLES                                                               |
+\*----------------------------------------------------------------------------*/
 
 article {
 	display: flex;
@@ -142,14 +149,13 @@ article img {
 article div {
 	position: relative;
 	background-color: rgba(255, 255, 255, 0.8);
-	box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
-	padding: 50px;
+	box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+	padding: 40px;
 }
 
 article div p{
 	opacity: 0.6;
 }
-
 
 article div p + p{
 	border-top: 1px solid #cdcdcd;
@@ -160,15 +166,40 @@ article div p + p{
 
 
 main section img {
-	min-width: 400px;
-	max-width: 400px;
-	width: 400px;
-	height: auto
+	height: 300px;
+	width: auto;
+	object-fit: contain;
+}
+
+article:nth-child(odd),
+article:nth-child(odd) h2,
+article:nth-child(odd) p
+{
+	text-align: right;
+	flex-direction: row-reverse;
 }
 
 #contact
 {
 	margin: 0px auto;
+}
+
+section#team div {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+section#team div {
+section#team div div img {
+	width: 10%;
+	height:auto;
+
+}
+
+section#team div div p {
+	display: block;
 }
 
 div#tel {
