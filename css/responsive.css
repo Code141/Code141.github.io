@@ -12,6 +12,10 @@
 	section article img {
 		height: 200px;
 	}
+
+	section#team div div img {
+		height: 150px;
+	}
 }
 
 @media screen and (max-width: 700px) {

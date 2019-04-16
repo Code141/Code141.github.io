@@ -52,17 +52,16 @@ hr {
 	width: 70%;
 }
 
-p {
+p::first-letter {
+	text-transform: uppercase;
+}
+
+article p {
 	margin-top: 30px;
 	font-size: 1.05em;
 }
 
-p::first-letter {
-	font-family: "AgeoPersonalUse";
-	text-transform: uppercase;
-}
-
-p span {
+article p span {
 	color: #19bbd5;
 	font-family: "AgeoPersonalUse-Bold";
 }
@@ -187,19 +186,33 @@ article:nth-child(odd) p
 section#team div {
 	display: flex;
 	flex-direction: row;
-	flex-wrap: wrap;
 	justify-content: space-around;
+	flex-wrap: wrap;
 }
 
-section#team div {
-section#team div div img {
-	width: 10%;
-	height:auto;
+section#team div div {
+	width: 160px;
+	flex-direction: column;
+	text-align: center;
+	display: block;
+	margin-top: 10px;
+}
 
+section#team div div img {
+	height: 200px;
+	border-radius: 5px;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 section#team div div p {
-	display: block;
+	margin-top: 10px;
+	color: #2c9dde;
+}
+
+section#team p.post {
+	margin-top: 5px;
+	margin-bottom: 10px;
+	color: rgba(0, 0, 0, 0.7);
 }
 
 div#tel {
