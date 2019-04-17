@@ -6,19 +6,25 @@
 #c6daec
 */
 
-body {
-	background-color: #19496b;
-	font-family: "AgeoPersonalUse-Light";
-}
-
-.wrap {
-	margin: 0 auto;
-	width: 90%;
+::first-letter {
+	text-transform: uppercase;
 }
 
 :target {			/* CSS HACK TO BYPASS HEADER SIZE FOR HANCOR*/
     padding-top: 70px; 
     margin-top: -70px; 
+}
+
+body {
+/*
+	background-color: #19496b;
+	font-family: sans-serif;
+*/
+}
+
+.wrap {
+	margin: 0 auto;
+	width: 1250px;
 }
 
 a {
@@ -39,7 +45,7 @@ h1 {
 }
 
 h2 {
-	color: #19496b;
+	color: #2c9dde;
 	font-family: "AgeoPersonalUse-Light";
 	font-size: 25px;
 }
@@ -52,8 +58,8 @@ hr {
 	width: 70%;
 }
 
-p::first-letter {
-	text-transform: uppercase;
+p {
+	color: rgba(0, 0, 0, 0.7);
 }
 
 article p {
@@ -63,7 +69,7 @@ article p {
 
 article p span {
 	color: #19bbd5;
-	font-family: "AgeoPersonalUse-Bold";
+	font-weight: bold;
 }
 
 /*----------------------------------------------------------------------------*\
@@ -107,15 +113,29 @@ menu {
 |       MAIN                                                                   |
 \*----------------------------------------------------------------------------*/
 
-main {
-	font-family: "AgeoPersonalUse";
-	background-color: #f8f8f8;
-	box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.9);
+section#tagline {
+	margin: 0px 0px 20px 0px;
+	background-image: url('../media/BGC2.jpg');
+	background-position: center;
+	height: 500px;
 }
 
-img#top {
-	width:100%;
-	margin: 0px 0px 20px 0px;
+section#tagline p {
+	margin: auto auto;
+	text-align: center;
+}
+
+section#tagline p#lawapi {
+	font-family: "AgeoPersonalUse-Bold";
+	font-size: 130px;
+	color:  #0e293c;
+}
+
+main {
+/*
+	background-color: #f8f8f8;
+	box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.9);
+*/
 }
 
 main section {
@@ -138,6 +158,7 @@ article + article{
 article div{
 	margin: auto auto;
 	text-align: left;
+	max-width: 600px;
 }
 
 article img {
@@ -148,12 +169,13 @@ article img {
 article div {
 	position: relative;
 	background-color: rgba(255, 255, 255, 0.8);
-	box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
 	padding: 40px;
 }
 
 article div p{
 	opacity: 0.6;
+	text-align: justify;
 }
 
 article div p + p{
@@ -178,10 +200,22 @@ article:nth-child(odd) p
 	flex-direction: row-reverse;
 }
 
-#contact
+section#philosophie article
 {
-	margin: 0px auto;
+	position: relative;
+	background-color: rgba(255, 255, 255, 0.8);
+	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+	padding: 40px;
 }
+
+section#philosophie article p {
+	margin-top: 0px;
+}
+
+/*----------------------------------------------------------------------------*\
+|       TEAM                                                                   |
+\*----------------------------------------------------------------------------*/
+
 
 section#team div {
 	display: flex;
@@ -195,7 +229,7 @@ section#team div div {
 	flex-direction: column;
 	text-align: center;
 	display: block;
-	margin-top: 10px;
+	margin: 5%;
 }
 
 section#team div div img {
@@ -215,12 +249,12 @@ section#team p.post {
 	color: rgba(0, 0, 0, 0.7);
 }
 
-div#tel {
-	font-family: sans-serif;
-}
-
 footer
 {
 
 }
 
+#contact
+{
+	margin: 0px auto;
+}
