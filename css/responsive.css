@@ -33,6 +33,16 @@ input[type=checkbox] {
 	section#team div div img {
 		height: 150px;
 	}
+
+	section#tagline img
+	{
+		display: none;
+	}
+
+	section#tagline div p#punchline {
+		color: red;
+	}
+
 }
 
 @media screen and (max-width: 700px) {

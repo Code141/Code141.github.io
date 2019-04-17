@@ -4,22 +4,22 @@
 #19bbd5
 #00e1c6
 #c6daec
-*/
+ */
 
 ::first-letter {
 	text-transform: uppercase;
 }
 
 :target {			/* CSS HACK TO BYPASS HEADER SIZE FOR HANCOR*/
-    padding-top: 70px; 
-    margin-top: -70px; 
+	padding-top: 70px; 
+	margin-top: -70px; 
 }
 
 body {
-/*
+	/*
 	background-color: #19496b;
 	font-family: sans-serif;
-*/
+	 */
 }
 
 .wrap {
@@ -120,27 +120,48 @@ li
 
 section#tagline {
 	margin: 0px 0px 20px 0px;
-	background-image: url('../media/BGC2.jpg');
+	background-image: url('../media/abstract.jpg');
+	background-size: 200% auto;
 	background-position: center;
-	height: 500px;
+	height: 80vh;
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+section#tagline img {
+	width: 30vw;
+	height: 100%;
+	margin-right: 6vw;
+	vertical-align: bottom;
 }
 
 section#tagline p {
-	margin: auto auto;
 	text-align: center;
 }
 
 section#tagline p#lawapi {
+	vertical-align: bottom;
 	font-family: "AgeoPersonalUse-Bold";
-	font-size: 130px;
+	font-size: 18vh;
+	margin-top: 150px;
 	color:  #0e293c;
 }
 
+section#tagline p#punchline {
+	padding: 0 4vw  0 18vw;
+	text-align: left;
+}
+
+section#tagline p#punchline span{
+	font-size: 1.5em;
+	margin-bottom: 20px;
+}
+
 main {
-/*
+	/*
 	background-color: #f8f8f8;
 	box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.9);
-*/
+	 */
 }
 
 main section {
