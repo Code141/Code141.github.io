@@ -4,10 +4,10 @@
 #19bbd5
 #00e1c6
 #c6daec
-*/
+ */
 
 ::first-letter {
-	text-transform: uppercase;
+    text-transform: uppercase;
 }
 
 :target {			/* CSS HACK TO BYPASS HEADER SIZE FOR HANCOR*/
@@ -16,60 +16,60 @@
 }
 
 body {
-/*
-	background-color: #19496b;
-	font-family: sans-serif;
-*/
+    /*
+    background-color: #19496b;
+    font-family: sans-serif;
+     */
 }
 
 .wrap {
-	margin: 0 auto;
-	width: 1250px;
+    margin: 0 auto;
+    width: 1250px;
 }
 
 a {
-	color: white;
-	text-decoration: none;
+    color: white;
+    text-decoration: none;
 }
 
 a:hover {
-	color: #00e1c6;
+    color: #00e1c6;
 }
 
 h1 {
-	padding: 0px 30px 10px 30px;
-	margin: 0px 30px 20px 30px;
-	color: #19496b;
-	font-family: "AgeoPersonalUse-Light";
-	font-size: 50px;
+    padding: 0px 30px 10px 30px;
+    margin: 0px 30px 20px 30px;
+    color: #19496b;
+    font-family: "AgeoPersonalUse-Light";
+    font-size: 50px;
 }
 
 h2 {
-	color: #2c9dde;
-	font-family: "AgeoPersonalUse-Light";
-	font-size: 25px;
+    color: #2c9dde;
+    font-family: "AgeoPersonalUse-Light";
+    font-size: 25px;
 }
 
 hr {
-	border: none;
-	border-top: 2px solid #00e1c6;
-	opacity: 0.3;
-	margin: 20px auto 20px auto;
-	width: 70%;
+    border: none;
+    border-top: 2px solid #00e1c6;
+    opacity: 0.3;
+    margin: 20px auto 20px auto;
+    width: 70%;
 }
 
 p {
-	color: rgba(0, 0, 0, 0.7);
+    color: rgba(0, 0, 0, 0.7);
 }
 
 article p {
-	margin-top: 30px;
-	font-size: 1.05em;
+    margin-top: 30px;
+    font-size: 1.05em;
 }
 
 article p span {
-	color: #19bbd5;
-	font-weight: bold;
+    color: #19bbd5;
+    font-weight: bold;
 }
 
 /*----------------------------------------------------------------------------*\
@@ -77,36 +77,36 @@ article p span {
 \*----------------------------------------------------------------------------*/
 
 header {
-	z-index: 1000;
-	background-color: #0e293c;
-	height: 60px;
-	box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.9);
-	color: #ffffff;
-	position: sticky;
-	top:0px;
-	font-family: "AgeoPersonalUse-SemiBold";
-	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-	display:flex;
+    z-index: 1000;
+    background-color: #0e293c;
+    height: 60px;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.9);
+    color: #ffffff;
+    position: sticky;
+    top:0px;
+    font-family: "AgeoPersonalUse-SemiBold";
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    display:flex;
 }
 
 header a
 {
-	margin-left: 20px;
+    margin-left: 20px;
 }
 
 header div#title {
-	display: inline-block;
-	font-size: 45px;
-	margin-top: 10px;
+    display: inline-block;
+    font-size: 45px;
+    margin-top: 10px;
 }
 
 .right {
-	float: right;
-	position: relative;
+    float: right;
+    position: relative;
 }
 
 menu {
-	display: inline-block;
+    display: inline-block;
 }
 
 /*----------------------------------------------------------------------------*\
@@ -114,33 +114,49 @@ menu {
 \*----------------------------------------------------------------------------*/
 
 section#tagline {
-	margin: 0px 0px 20px 0px;
-	background-image: url('../media/BGC2.jpg');
-	background-position: center;
-	height: 500px;
+    margin: 0px 0px 20px 0px;
+    background-image: url('../media/abstract.jpg');
+    background-size: 200% auto;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+section#tagline img {
+    width: 30vw;
+    height: 100%;
+    margin-right: 6vw;
+    vertical-align: bottom;
 }
 
 section#tagline p {
-	margin: auto auto;
-	text-align: center;
+    height: 50%;
+    text-align: center;
 }
 
 section#tagline p#lawapi {
-	font-family: "AgeoPersonalUse-Bold";
-	font-size: 130px;
-	color:  #0e293c;
+    vertical-align: bottom;
+    font-family: "AgeoPersonalUse-Bold";
+    font-size: 18vh;
+    color:  #0e293c;
+    padding-top: 21vh;
+}
+section#tagline p#punchline {
+    padding: 0 4vw  0 18vw;
+    text-align: left;
 }
 
 main {
-/*
-	background-color: #f8f8f8;
-	box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.9);
-*/
+    /*
+    background-color: #f8f8f8;
+    box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.9);
+     */
 }
 
 main section {
-	padding: 30px 40px 30px 40px;
-	text-align: justify;
+    padding: 30px 40px 30px 40px;
+    text-align: justify;
 }
 
 /*----------------------------------------------------------------------------*\
@@ -148,68 +164,68 @@ main section {
 \*----------------------------------------------------------------------------*/
 
 article {
-	display: flex;
+    display: flex;
 }
 
 article + article{
-	margin: 100px 0px 0px 0px;
+    margin: 100px 0px 0px 0px;
 }
 
 article div{
-	margin: auto auto;
-	text-align: left;
-	max-width: 600px;
+    margin: auto auto;
+    text-align: left;
+    max-width: 600px;
 }
 
 article img {
-	opacity: 0.7;
-	margin: 20px;
+    opacity: 0.7;
+    margin: 20px;
 }
 
 article div {
-	position: relative;
-	background-color: rgba(255, 255, 255, 0.8);
-	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
-	padding: 40px;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
 }
 
 article div p{
-	opacity: 0.6;
-	text-align: justify;
+    opacity: 0.6;
+    text-align: justify;
 }
 
 article div p + p{
-	border-top: 1px solid #cdcdcd;
-	padding-top: 30px;
-	opacity: 0.8;
-	text-indent: 0em;
+    border-top: 1px solid #cdcdcd;
+    padding-top: 30px;
+    opacity: 0.8;
+    text-indent: 0em;
 }
 
 
 main section img {
-	height: 300px;
-	width: auto;
-	object-fit: contain;
+    height: 300px;
+    width: auto;
+    object-fit: contain;
 }
 
 article:nth-child(odd),
 article:nth-child(odd) h2,
 article:nth-child(odd) p
 {
-	text-align: right;
-	flex-direction: row-reverse;
+    text-align: right;
+    flex-direction: row-reverse;
 }
 
 section#philosophie article
 {
-	position: relative;
-	background-color: rgba(255, 255, 255, 0.8);
-	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
-	padding: 40px;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
 }
 
 section#philosophie article p {
-	margin-top: 0px;
+    margin-top: 0px;
 }
 
 /*----------------------------------------------------------------------------*\
@@ -218,35 +234,35 @@ section#philosophie article p {
 
 
 section#team div {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 section#team div div {
-	width: 160px;
-	flex-direction: column;
-	text-align: center;
-	display: block;
-	margin: 5%;
+    width: 160px;
+    flex-direction: column;
+    text-align: center;
+    display: block;
+    margin: 5%;
 }
 
 section#team div div img {
-	height: 200px;
-	border-radius: 5px;
-	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    height: 200px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 section#team div div p {
-	margin-top: 10px;
-	color: #2c9dde;
+    margin-top: 10px;
+    color: #2c9dde;
 }
 
 section#team p.post {
-	margin-top: 5px;
-	margin-bottom: 10px;
-	color: rgba(0, 0, 0, 0.7);
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: rgba(0, 0, 0, 0.7);
 }
 
 footer
@@ -256,5 +272,5 @@ footer
 
 #contact
 {
-	margin: 0px auto;
+    margin: 0px auto;
 }

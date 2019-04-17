@@ -1,6 +1,5 @@
-
 a.nav-link {
-  background-color: #19496b;
+  background: linear-gradient(45deg, #87c8d9 40% , #cee0e6);
   text-align: center;
 }
 
@@ -28,7 +27,6 @@ a.nav-link:hover {
   i.fas, i.fab {
     font-size: 3vw;
   }
-
 }
 
 
