@@ -89,24 +89,29 @@ header {
 	display:flex;
 }
 
-header a
-{
-	margin-left: 20px;
-}
-
 header div#title {
-	display: inline-block;
 	font-size: 45px;
 	margin-top: 10px;
 }
 
-.right {
-	float: right;
-	position: relative;
+header div ,
+header div div
+{
+	display:flex;
+	justify-content: space-between;
 }
 
-menu {
-	display: inline-block;
+ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width:80%;
+}
+
+li
+{
+	margin: auto;
+	box-sizing: border-box;
 }
 
 /*----------------------------------------------------------------------------*\
@@ -202,7 +207,6 @@ article:nth-child(odd) p
 
 section#philosophie article
 {
-	position: relative;
 	background-color: rgba(255, 255, 255, 0.8);
 	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
 	padding: 40px;
