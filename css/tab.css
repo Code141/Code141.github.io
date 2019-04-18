@@ -1,49 +1,97 @@
 a.nav-link {
-	background: linear-gradient(45deg, #87c8d9 40% , #cee0e6);
-	text-align: center;
+    background: linear-gradient(45deg, #87c8d9 40% , #cee0e6);
+    text-align: center;
 }
 
 i.fas, i.fab {
-	font-size: 2vw;
-	margin: 2px;
+    font-size: 2vw;
+    margin: 2px;
+}
+
+ul#myTab {
+    width: 100%;
+    margin-top: 12vw;
+    border: unset;
+}
+
+div.common_style ul{
+    padding-top: 1vh;
+    display: block;
+}
+
+div.common_style ul li {
+    margin-left: 13vw; 
+    padding-top: 2px;
+    font-size: 18px;
+    text-align: left;
+}
+
+div.common_style h2 {
+    margin-bottom: 2vh;
+    text-align: center!important;
+}
+
+main.wrap {
+    margin-top: 10vw;
+}
+
+div.recent_update_text article {
+    width: 100%;
+}
+
+div.common_style {
+    padding-top: 5vh;
+    width: 100%;
+    max-width: unset;
 }
 
 li.nav-item {
-	margin: 5px;
+    margin: 5px;
 }
 
 a.nav-link:hover {
-	color:  #c6daec;
-	background-color:  #fff!important;
+    color:  #c6daec;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
 
-	li.nav-item {
-		margin: 5px;
-		width: 35%
-	}
+    ul#myTab {
+        border: unset;
+    }
 
-	i.fas, i.fab {
-		font-size: 3vw;
-	}
+    li.nav-item a.active{
+        background-color: #000!important; 
+    }
+
+    li.nav-item {
+        margin: 5px;
+        width: 45%
+    }
+
+    div.common_style ul li {
+        width: 100%;
+        margin: 0;
+    }
+
+    i.fas, i.fab {
+        font-size: 3vw;
+    }
 }
-
 
 @media screen and (max-width: 500px) {
 
-	section.recent_update_area {
-		padding: 0;
-		padding-top: 5vh; 
-	}
+    section.recent_update_area {
+        padding: 0;
+        padding-top: 5vh; 
+    }
 
-	section.recent_update_area div.container {
-		margin: 0;
-		width: 100%;
-		max-width: unset;
-	}
+    section.recent_update_area div.container {
+        margin: 0;
+        width: 100%;
+        max-width: unset;
+    }
 
-	ul.myTab {
-		width: 100%;
-	}
+    ul.myTab {
+        width: 100%;
+    }
 }
