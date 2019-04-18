@@ -11,8 +11,8 @@
 }
 
 :target {			/* CSS HACK TO BYPASS HEADER SIZE FOR HANCOR*/
-	padding-top: 70px; 
-	margin-top: -70px; 
+	padding-top: 50px; 
+	margin-top: -50px; 
 }
 
 body {
