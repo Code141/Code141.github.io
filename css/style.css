@@ -39,10 +39,11 @@ a:hover {
 
 h1 {
 	padding: 0px 30px 10px 30px;
-	margin: 0px 30px 20px 30px;
+	margin: 40px 30px 50px 30px;
 	color: #19496b;
 	font-family: "AgeoPersonalUse-Light";
 	font-size: 50px;
+	border-bottom: 2px solid #00e1c6;
 }
 
 h2 {
@@ -125,6 +126,7 @@ li
 	box-sizing: border-box;
 	z-index: 2000;
 }
+
 i.drop_on {
 	font-size: 40px;
 }
@@ -145,7 +147,7 @@ section#tagline {
 
 section#tagline img {
 	position: absolute;
-	left: 62vw;
+	right: 10vw;
 	width: 45vh;
 	height: 100%;
 	z-index: 100;
@@ -160,7 +162,6 @@ div#law {
 	z-index: 1000;
 }
 
-
 section#tagline p {
 	font-size: 2vh;
 	z-index: 200;
@@ -168,19 +169,20 @@ section#tagline p {
 
 section#tagline p#lawapi {
 	font-family: "AgeoPersonalUse-Bold";
-	font-size: 18vh;
+	font-size: 10vw;
 	margin-bottom: 3vh;
 	color:  #0e293c;
 }
 
 section#tagline p#punchline {
 	text-align: left;
-	font-size: 3vh;
+	font-size: 1.75vw;
 	margin-bottom: 15vh;
 }
 section#tagline p#punchline_describ {
 	width: 50vw;
-	font-size: 2.5vh;
+	font-size: 1.75vw;
+	max-width: 750px;
 }
 
 main {
@@ -280,12 +282,16 @@ section#team div {
 	flex-wrap: wrap;
 }
 
+section#team p {
+	text-align: center !important;
+}
 section#team div div {
 	width: 160px;
 	flex-direction: column;
 	text-align: center;
 	display: block;
-	margin: 5%;
+	margin: 10px;
+	margin-bottom: 40px;
 }
 
 section#team div div img {
@@ -321,4 +327,9 @@ section#contact a
 #contact
 {
 	margin: 0px auto;
+}
+
+#partners {
+	margin-top: 100px;
+	margin-bottom: 100px;
 }
