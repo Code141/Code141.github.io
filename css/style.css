@@ -267,7 +267,7 @@ section#philosophie article
 section#philosophie article p {
 	margin-top: 0px;
 }
-section.appli_plate{
+section#outil{
 	flex-direction: row;
 }
 /*----------------------------------------------------------------------------*\

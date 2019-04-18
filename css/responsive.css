@@ -106,13 +106,18 @@ section#tagline p#punchline_describ {
 	section article:nth-child(even),
 	article + article
 	{
-		margin: 20px 0px 10px 0px;
+		margin: 20px auto 10px auto;
 	}
 
 	p {
 
 		text-align: justify !important;
 	}
+
+	header span {
+		display: none;
+	}
+
 }
 
 @media screen and (max-width: 700px) {
@@ -180,10 +185,6 @@ i.drop_off
 	}
 
 	header menu {
-	}
-
-	header span {
-		display: none;
 	}
 }
 

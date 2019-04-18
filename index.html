@@ -48,14 +48,21 @@ function onchange_drop(e){
 
 				<ul>
 					<li>
+						<label for="dropdown" id="menu_0" onclick="window.location.hash='outils'">
+							<span>Les </span>outils
+							<input href="#outils" id="menu_0" type="checkbox">
+						</label>
+					</li>
+
+					<li>
 						<label for="dropdown" id="menu_1" onclick="window.location.hash='mission'">
-							<span>La </span>mission
+							<span>la </span>mission
 							<input href="#mission" id="menu_1" type="checkbox">
 						</label>
 					</li>
 					<li>
-						<label for="dropdown" id="menu_2" onclick="window.location.hash='philosophie'">
-							<span>Notre </span>philosophie
+						<label for="dropdown" id="menu_2" onclick="window.location.hash='vision'">
+							<span>Notre </span>vision
 							<input href="#mission" id="menu2" type="checkbox">
 						</label>
 					</li>
@@ -96,15 +103,19 @@ function onchange_drop(e){
 		<!--================Tab area =================-->
 
 						<main class="wrap">
-							<section id="appli_plate">
+							<section id="outils">
 								<h1>
 									Nos outils
 								</h1>
 								<article>
+									<img src="media/undraw.svg" alt="nouvelle juriste"> 
 									<div>
 										<h2>
-											Application
+											Une application pour les juristes
 										</h2>
+										<p>
+											Un environnement de travail dynamique et intuitif regroupant les outils essentiels à la composition de syllogismes juridiques
+										</p>
 										<p>
 											Vos recherche simplifiées
 											<br>
@@ -112,28 +123,29 @@ function onchange_drop(e){
 											<br>
 											Une vue d'ensemble intuitive de vos syllogisme
 											<br>
-											Passez à l'action  (éditeur de texte)
+											Editeur de texte
 											<br>
 											Un travail d'équipe fluidifié
-										</p>
-										<p>
-											BLABLA
+										
 										</p>
 									</div>
 								</article>
 								<article>
+									<img src="media/undraw_marketing_v0iu.svg" alt="nouvelle juriste"> 
 									<div>
 										<h2>
-											Une plateforme de partage Pour communiquer entre juriste et equipe
+											Plateforme
 										</h2>
 										<p>
+										Plateforme communautaire et collaborative, fluidifiant les echanges autour du droit
+										</p>
+										<p>
+
 											Gagnez en visibilité
 											<br>
 											Faites des connections
 											<br>
 											Partagez vos recherches et connaissances
-										</p>
-										<p>
 											Un espace de travail Dynamique et cherchant à vous aider
 										</p>
 									</div>
@@ -211,9 +223,9 @@ function onchange_drop(e){
 								</article>
 							</section>
 
-							<section id="philosophie">
+							<section id="vision">
 								<h1>
-									Notre philosophie
+									Notre vision
 								</h1>
 								<article>
 									<p>
