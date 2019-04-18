@@ -5,17 +5,16 @@
 	<title>
 	  Lawapi
 	</title>
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/font_face_ageo.css">
 
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/media.css">
+	<link rel="stylesheet" type="text/css" href="css/tab.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
 	<link rel="stylesheet" type="text/css" href="css/responsive.css">
-	<link rel="stylesheet" type="text/css" href="css/tab.css">
-
   </head>
   <body>
 
@@ -27,11 +26,25 @@
 			</div>
 
 			<label for="dropdown" id="dropdown_button">
-				<i class="fas fa-bars"></i>
-				<i class="fas fa-times"></i>
+				<i id="drop_on" class="fas fa-bars drop_on"></i>
+				<i id="drop_off" class="fas fa-times drop_off"></i>
 			</label>
+<script>
+function onchange_drop(e){
+	if (e.checked)
+	{
+		document.getElementById("drop_on").style = "display:none";
+		document.getElementById("drop_off").style = "display:inline-block";
+	}
+	else
+	{
+		document.getElementById("drop_on").style = "display:inline-block";
+		document.getElementById("drop_off").style = "display:none";
+	}
+}
 
-			<input id="dropdown" type="checkbox">
+</script>
+			<input id="dropdown" type="checkbox" onchange="onchange_drop(this)">
 
 			<ul>
 				<li>
@@ -59,13 +72,16 @@
 					</label>
 				</li>
 			</ul>
+
+
+
 	  </div>
 	</header>
 		<section id="tagline">
 			<div>
-				<img src="media/undraw_software_engineer_lvl5.svg" alt="nouvelle juriste"> 
+				<img src="media/undraw_prototyping_process_rswj.svg" alt="nouvelle juriste"> 
 			</div>
-			<div>
+			<div id="law">
 				<p id="lawapi">
 					Lawapi
 				</p>
@@ -73,7 +89,9 @@
 					Un nouvel écosystème pour le droit
 				</p>
 				<p id="punchline_describ">
-					Découvrez des outils high-tech pour constituer des syllogisme juridiques intelligents et améliorer vos performances de juriste.</br>
+					Découvrez des outils high-tech pour constituer des syllogisme juridiques intelligents et améliorer vos performances de juriste.
+					<br>
+					<br>
 					Connectez, partagez et développez vos connaissances grâce à une communauté d’experts.
 				</p>
 			</div>
@@ -143,7 +161,7 @@
 		  La mission
 		</h1>
 		<article>
-		  <img src="media/data.png">
+				<img src="media/undraw_software_engineer_lvl5.svg" alt="nouvelle juriste"> 
 		  <div>
 			<h2>
 			  vos recherches simplifiées:
@@ -161,8 +179,8 @@
 		  </div>
 		</article>
 		<article>
-		  <img src="media/working.png">
-		  <div>
+		  <img src="media/undraw_process_e90d.svg">
+			<div>
 			<h2>
 			  passez à l'action !
 			</h2>
@@ -175,7 +193,7 @@
 		  </div>
 		</article>
 		<article>
-		  <img src="media/work.png">
+		  <img src="media/undraw_personal_text_vkd8.svg">
 		  <div>
 			<h2>
 			  faites des connections
@@ -189,7 +207,7 @@
 		  </div>
 		</article>
 		<article>
-		  <img src="media/enginer.png">
+		  <img src="media/undraw_task_31wc.svg">
 		  <div>
 			<h2>
 			  partagez vos recherches et connaissances:
@@ -203,7 +221,7 @@
 		  </div>
 		</article>
 		<article>
-		  <img src="media/enginer.png">
+		  <img src="media/undraw_hire_te5y.svg">
 		  <div>
 			<h2>
 			  gagnez en visibilité
