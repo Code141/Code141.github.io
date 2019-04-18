@@ -1,0 +1,646 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            Lawapi
+        </title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="css/font_face_ageo.css">
+
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel="stylesheet" type="text/css" href="css/media.css">
+        <link rel="stylesheet" type="text/css" href="css/tab.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+
+        <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    </head>
+    <body>
+
+        <header>
+            <div class="wrap">
+
+                <div id="title">
+                    Lawapi
+                </div>
+
+                <label for="dropdown" id="dropdown_button">
+                    <i id="drop_on" class="fas fa-bars drop_on"></i>
+                    <i id="drop_off" class="fas fa-times drop_off"></i>
+                </label>
+                <script>
+                    function onchange_drop(e){
+                        if (e.checked)
+                        {
+                            document.getElementById("drop_on").style = "display:none";
+                            document.getElementById("drop_off").style = "display:inline-block";
+                        }
+                        else
+                        {
+                            document.getElementById("drop_on").style = "display:inline-block";
+                            document.getElementById("drop_off").style = "display:none";
+                        }
+                    }
+
+                </script>
+                <input id="dropdown" type="checkbox" onchange="onchange_drop(this)">
+
+                <ul>
+                    <li>
+                        <label for="dropdown" id="menu_1" onclick="window.location.hash='mission'">
+                            <span>La </span>mission
+                            <input href="#mission" id="menu_1" type="checkbox">
+                        </label>
+                    </li>
+                    <li>
+                        <label for="dropdown" id="menu_2" onclick="window.location.hash='philosophie'">
+                            <span>Notre </span>philosophie
+                            <input href="#mission" id="menu2" type="checkbox">
+                        </label>
+                    </li>
+                    <li>
+                        <label for="dropdown" id="menu_3" onclick="window.location.hash='team'">
+                            <span>La </span>team
+                            <input href="#mission" id="menu_3" type="checkbox">
+                        </label>
+                    </li>
+                    <li>
+                        <label for="dropdown" id="menu_4" onclick="window.location.hash='contact'">
+                            <span>Nous </span>contact<span>er</span>
+                            <input href="#mission" id="menu_4" type="checkbox">
+                        </label>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <section id="tagline">
+            <div>
+                <img src="media/undraw_prototyping_process_rswj.svg" alt="nouvelle juriste"> 
+            </div>
+            <div id="law">
+                <p id="lawapi">
+                Lawapi
+                </p>
+                <p id="punchline">
+                Un nouvel écosystème pour le droit
+                </p>
+                <p id="punchline_describ">
+                Découvrez des outils high-tech pour constituer des syllogisme juridiques intelligents et améliorer vos performances de juriste.
+                <br>
+                <br>
+                Connectez, partagez et développez vos connaissances grâce à une communauté d’experts.
+                </p>
+            </div>
+        </section>
+        <!--================Tab area =================-->
+        <section class="recent_update_area">
+            <div class="container">
+                <div class="recent_update_inner">
+                    <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active show" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">
+                                <i class="fas fa-magic"></i>
+                                <h6>Application</h6>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
+                                                                                                              aria-selected="false">
+                                <i class="fas fa-briefcase"></i>
+                                <h6>Plateforme</h6>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade active show" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <div class="row recent_update_text align-items-center">
+                                <article>
+                                    <div class="common_style">
+                                        <h2>Un espace de travail Dynamique et cherchant à vous aider</h3>
+                                        <ul>
+                                            <li>Vos recherche simplifiées</li>
+                                            <li>Une prise de notes intuitive</li>
+                                            <li>Une vue d'ensemble intuitive de vos syllogisme </li>
+                                            <li>Passez à l'action  (éditeur de texte)</li>
+                                            <li>Un travail d'équipe fluidifié</li>
+                                        </ul>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                            <div class="row recent_update_text align-items-center">
+                                <article>
+                                    <div class="common_style">
+                                        <h2>Une plateforme de partage Pour communiquer entre juriste et equipe</h3>
+                                        <ul>
+                                            <li>Gagnez en visibilité</li>
+                                            <li>Faites des connections </li>
+                                            <li>Partagez vos recherches et connaissances  </li>
+                                        </ul>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <!-- tab area -->
+
+                        <main class="wrap">
+                            <section id="mission">
+                                <h1>
+                                    La mission
+                                </h1>
+                                <article>
+                                    <img src="media/undraw_software_engineer_lvl5.svg" alt="nouvelle juriste"> 
+                                    <div>
+                                        <h2>
+                                            vos recherches simplifiées:
+                                        </h2>
+                                        <p>
+                                        Recherchez par mot clef dans toutes les sources du droit
+                                        <span>Selectionnez simplement les passages qui vous interessent</span> qui vous intéressent et reduisez votre charge cognitive lors de la réalisation de vos syllogismes.
+                                        </p>
+                                        <p>
+                                        Vos raisonnements juridiques preliminaires sont maintenant plus uniformes et peuvent etre partagée avec vos collegues et compris sans effort par eux.
+                                        </p>
+                                    </div>
+                                </article>
+                                <article>
+                                    <img src="media/undraw_process_e90d.svg">
+                                    <div>
+                                        <h2>
+                                            passez à l'action !
+                                        </h2>
+                                        <p>
+                                        Rédigez vos syllogismes juridiques avec un éditeur de text intelligent vous permettant d’y glisser les éléments de votre recherche; autocompletion; Modeles de redaction; un travail d'équipe fluidifié: Partagez vos recherches, raisonnements graphiques et documents écrits ou scannés avec vos collègues et/ou la communauté.
+                                        </p>
+                                    </div>
+                                </article>
+                                <article>
+                                    <img src="media/undraw_personal_text_vkd8.svg">
+                                    <div>
+                                        <h2>
+                                            Faites des connections
+                                        </h2>
+                                        <p>
+                                        Entrez en contact avec les différents acteurs du droit en laissant des commentaires sur leurs publications ou en les contactant en privé.
+                                        </p>
+                                    </div>
+                                </article>
+                                <article>
+                                    <img src="media/undraw_task_31wc.svg">
+                                    <div>
+                                        <h2>
+                                            partagez vos recherches et connaissances:
+                                        </h2>
+                                        <p>
+                                        Partagez votre profil, vos articles, recherches et connaissances.
+                                        </p>
+                                        <p> 
+                                        Profitez à votre tour du soutien de la communauté et des choses qu'elle laisse à votre disposition pour realiser de plus grande chose et accroitre vos champs d'expertises.
+                                        </p>
+                                    </div>
+                                </article>
+                                <article>
+                                    <img src="media/undraw_hire_te5y.svg">
+                                    <div>
+                                        <h2>
+                                            gagnez en visibilité
+                                        </h2>
+                                        <p>
+                                        Échangez avec les internautes et participez à l'émulation de la communauté. Votre engouement sur la plateforme vous mettra en avant vous et votre entreprise aupres de vos pairs.
+                                        </p>
+                                        <p>
+                                        Decouvrez le plaisir de faire participer à la progression de votre ecosysteme et offrez vous la possibilité d'en devenir en un acteur majeur. 
+                                        </p>
+                                    </div>
+                                </article>
+                            </section>
+
+                            <section id="philosophie">
+                                <h1>
+                                    Notre philosophie
+                                </h1>
+                                <article>
+                                    <p>
+                                    Le droit pour tous!
+                                    Lawapi, c’est une équipe de dix développeurs de 42 et une juriste de la sorbonne qui aimeraient ammener les acteurs du droit dans le 21e siècle et leur proposer un nouvel environnement de travail afin d'améliorer les processus de travail des juristes, fonder une communauté ouverte et solidaire et, à terme, démocratiser le droit
+                                    </p>
+                                </article>
+                            </section>
+
+                            <section id="team">
+                                <h1>
+                                    La team
+                                </h1>
+                                <div>
+
+                                    <div>
+                                        <img src="media/team/malberte.jpg">
+                                        <p>
+                                        <span class="firstname">
+                                            Matthieu
+                                        </span>
+                                        <span class="lastname">
+                                            Albertelli
+                                        </span>
+                                        </p>
+                                        <p class="post">
+                                        Manager
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <img src="media/team/jsmadhi.jpg">
+                                        <p>
+                                        <span class="firstname">
+                                            Jedjiga 
+                                        </span>
+                                        <span class="lastname">
+                                            Smadhi
+                                        </span>
+                                        </p>
+                                        <p class="post">
+                                        Responsable pôle juridique
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <img src="media/team/bafraiki.jpg">
+                                        <p>
+                                        <span class="firstname">
+                                            Baptiste
+                                        </span>
+                                        <span class="lastname">
+                                            Fraikin
+                                        </span>
+                                        </p>
+                                        <p class="post">
+                                        lead developer
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <img src="media/team/gelambin.jpg">
+                                        <p>
+                                        <span class="firstname">
+                                            Geoffrey
+                                        </span>
+                                        <span class="lastname">
+                                            Lambinet
+                                        </span>
+                                        </p>
+                                        <p class="post">
+                                        Architecte logiciel
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <img src="media/team/fdelsing.jpg">
+                                        <p>
+                                        <span class="firstname">
+                                            Fiona
+                                        </span>
+                                        <span class="lastname">
+                                            Delsing
+                                        </span>
+                                        </p>
+                                        <p class="post">
+                                        Administratrice SGBD
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <img src="media/team/jjolivot.jpg">
+                                        <p>
+                                        <span class="firstname">
+                                            Jules
+                                        </span>
+                                        <span class="lastname">
+                                            Jolivot
+                                        </span>
+                                        </p>
+                                        <p class="post">
+                                        Développeur outil
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <img src="media/team/kandeol.jpg">
+                                        <p>
+                                        <span class="firstname">
+                                            Kévin
+                                        </span>
+                                        <span class="lastname">
+                                            Andeol
+                                        </span>
+                                        </p>
+                                        <p class="post">
+                                        Développeur Designer Ux
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <img src="media/team/jayache.jpg">
+                                        <p>
+                                        <span class="firstname">
+                                            Jordan
+                                        </span>
+                                        <span class="lastname">
+                                            Ayache
+                                        </span>
+                                        </p>
+                                        <p class="post">
+                                        Data analyst
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <img src="media/team/fboudyaf.jpg">
+                                        <p>
+                                        <span class="firstname">
+                                            Fatiha
+                                        </span>
+                                        <span class="lastname">
+                                            Boudyaf
+                                        </span>
+                                        </p>
+                                        <p class="post">
+                                        Développeuse Web Full-stack
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <img src="media/team/adejbakh.jpg">
+                                        <p>
+                                        <span class="firstname">
+                                            Arman
+                                        </span>
+                                        <span class="lastname">
+                                            Dejbakhsh
+                                        </span>
+                                        </p>
+                                        <p class="post">
+                                        Business Developer
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <img src="media/team/vlhomme.jpg">
+                                        <p>
+                                        <span class="firstname">
+                                            Virgile
+                                        </span>
+                                        <span class="lastname">
+                                            L'homme
+                                        </span>
+                                        </p>
+                                        <p class="post">
+                                        Développeur Web Full-stack
+                                        </p>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section id="contact">
+                                <h1>
+                                    Contact
+                                </h1>
+                                <div id="tel">
+                                    <p>
+                                    Malbon le Grand
+                                    </p>
+                                    <p>
+                                    +33 6 18 35 71 82
+                                    </p>
+                                    <p>
+                                    lawapi-cdt@gmail.com
+                                    </p>
+                                </div>
+                                <button>  <a href="typeform.html" target="_blank">ContactUs</a></button>
+                            </section>
+
+<<<<<<< HEAD
+                            <section id="partners">
+                                <div class="partners">
+                                    <div id="quarante_deux">
+                                    </div>
+                                    <div id="matrice_ddt">
+                                    </div>
+                                    <div id="dalloz">
+                                    </div>
+                                    <div id="editions_legislative">
+                                    </div>
+                                    <div id="els">
+                                    </div>
+                                </div>
+                            </section>
+                        </main>
+                        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+                        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+=======
+	  <section id="team">
+		<h1>
+		  La team
+		</h1>
+		<div>
+
+		  <div>
+			<img src="media/team/malberte.jpg">
+			<p>
+			<span class="firstname">
+			  Matthieu
+			</span>
+			<span class="lastname">
+			  Albertelli
+			</span>
+			</p>
+			<p class="post">
+			Manager
+			</p>
+		  </div>
+		  <div>
+			<img src="media/team/jsmadhi.jpg">
+			<p>
+			<span class="firstname">
+			  Jedjiga 
+			</span>
+			<span class="lastname">
+			  Smadhi
+			</span>
+			</p>
+			<p class="post">
+			Responsable pôle juridique
+			</p>
+		  </div>
+		  <div>
+			<img src="media/team/bafraiki.jpg">
+			<p>
+			<span class="firstname">
+			  Baptiste
+			</span>
+			<span class="lastname">
+			  Fraikin
+			</span>
+			</p>
+			<p class="post">
+			lead developer
+			</p>
+		  </div>
+		  <div>
+			<img src="media/team/gelambin.jpg">
+			<p>
+			<span class="firstname">
+			  Geoffrey
+			</span>
+			<span class="lastname">
+			  Lambinet
+			</span>
+			</p>
+			<p class="post">
+			Architecte logiciel
+			</p>
+		  </div>
+		  <div>
+			<img src="media/team/fdelsing.jpg">
+			<p>
+			<span class="firstname">
+			  Fiona
+			</span>
+			<span class="lastname">
+			  Delsing
+			</span>
+			</p>
+			<p class="post">
+			Administratrice SGBD
+			</p>
+		  </div>
+		  <div>
+			<img src="media/team/adejbakh.jpg">
+			<p>
+			<span class="firstname">
+			  Arman
+			</span>
+			<span class="lastname">
+			  Dejbakhsh
+			</span>
+			</p>
+			<p class="post">
+			Business Developer
+			</p>
+		  </div>
+
+		  <div>
+			<img src="media/team/jayache.jpg">
+			<p>
+			<span class="firstname">
+			  Jordan
+			</span>
+			<span class="lastname">
+			  Ayache
+			</span>
+			</p>
+			<p class="post">
+			Data analyst
+			</p>
+		  </div>
+
+		  <div>
+			<img src="media/team/kandeol.jpg">
+			<p>
+			<span class="firstname">
+			  Kévin
+			</span>
+			<span class="lastname">
+			  Andeol
+			</span>
+			</p>
+			<p class="post">
+			Développeur Designer Ux
+			</p>
+		  </div>
+		  <div>
+			<img src="media/team/jjolivot.jpg">
+			<p>
+			<span class="firstname">
+			  Jules
+			</span>
+			<span class="lastname">
+			  Jolivot
+			</span>
+			</p>
+			<p class="post">
+			Développeur outil
+			</p>
+		  </div>
+		  <div>
+			<img src="media/team/fboudyaf.jpg">
+			<p>
+			<span class="firstname">
+			  Fatiha
+			</span>
+			<span class="lastname">
+			  Boudyaf
+			</span>
+			</p>
+			<p class="post">
+			Développeuse Web Full-stack
+			</p>
+		  </div>
+
+		  <div>
+			<img src="media/team/vlhomme.jpg">
+			<p>
+			<span class="firstname">
+			  Virgile
+			</span>
+			<span class="lastname">
+			  L'homme
+			</span>
+			</p>
+			<p class="post">
+			Développeur Web Full-stack
+			</p>
+		  </div>
+		</div>
+	  </section>
+
+	<section id="partners">
+		<h1>
+		  Partenaires
+		</h1>
+
+		<div class="partners">
+			<div id="quarante_deux">
+			</div>
+			<div id="matrice_ddt">
+			</div>
+			<div id="dalloz">
+			</div>
+			<div id="editions_legislative">
+			</div>
+			<div id="els">
+			</div>
+		</div>
+	  </section>
+
+	  <section id="contact">
+		<h1>
+		  Contact
+		</h1>
+		<article>
+			<div id="tel">
+				<h2>
+					Matthieu Albertelli
+				</h2>
+				<p>
+					+33 7 67 42 86 90
+				</p>
+				<p>
+					contact@lawapi.eu
+				</p>
+			</div>
+		</article>
+	</section>
+
+	</main>
+	  <div class="typeform-widget" data-url="https://fraikinbaptistie.typeform.com/to/p9NFgS" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=p9NFgS&utm_source=typeform.com-13775910-Basic&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=EN" style="color: #999" target="_blank">Typeform</a> </div>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+>>>>>>> d33e532c28b1ff5b862d1e1a8757ecf3b40e86ba
+</html>
