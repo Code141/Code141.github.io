@@ -33,7 +33,7 @@ i.drop_off
 		vertical-align: middle;
 	}
 	section article img {
-		height: 150px;
+		height: 60%;
 	}
 
 
@@ -59,6 +59,11 @@ section#tagline p#punchline_describ {
 
 @media screen and (max-width: 900px)
 {
+
+	section#tagline {
+		background-size: auto 100%;
+	}
+
 	article,
 	section article:nth-child(odd),
 	article + article

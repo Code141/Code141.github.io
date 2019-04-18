@@ -137,12 +137,13 @@ i.drop_on {
 
 section#tagline {
 	margin: 0px 0px 0px 0px;
-	background-image: url('../media/abstract.jpg');
-	background-size: 200% auto;
+	background-image: url('../media/background.png');
+	background-size: 100% 100%;
 	background-position: center;
 	height: 80vh;
 	display: flex;
 	flex-direction: row-reverse;
+
 }
 
 section#tagline img {
@@ -229,7 +230,6 @@ article div {
 
 article div p{
 	opacity: 0.6;
-	text-align: justify;
 }
 
 article div p + p{
@@ -267,7 +267,7 @@ section#vision article
 section#vision article p {
 	margin-top: 0px;
 }
-section#possibilitees{
+section#possibilites{
 	flex-direction: row;
 }
 
