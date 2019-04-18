@@ -26,21 +26,17 @@ i.drop_off
 		width: 90%;
 	}
 
-	article,
-	section article:nth-child(odd),
-	article + article
+	section article img
 	{
-		flex-direction: column;
-		margin: 0px 0px 0px 0px;
+		margin-top: auto;
+		margin-bottom: auto;
+		vertical-align: middle;
 	}
-
 	section article img {
-		height: 200px;
-	}
-
-	section#team div div img {
 		height: 150px;
 	}
+
+
 
 }
 
@@ -63,7 +59,21 @@ section#tagline p#punchline_describ {
 
 @media screen and (max-width: 900px)
 {
+	article,
+	section article:nth-child(odd),
+	article + article
+	{
+		flex-direction: column;
+		margin: 0px 0px 0px 0px;
+	}
 
+	section article img {
+		height: 200px;
+	}
+
+	section#team div div img {
+		height: 150px;
+	}
 	section#tagline img
 	{
 		left: 20%;

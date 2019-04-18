@@ -254,7 +254,7 @@ article:nth-child(odd) p
 	flex-direction: row-reverse;
 }
 
-section#philosophie article
+section#vision article
 {
 	max-width: 750px;
 	opacity: 0.8;
@@ -264,7 +264,7 @@ section#philosophie article
 	margin: auto auto;
 }
 
-section#philosophie article p {
+section#vision article p {
 	margin-top: 0px;
 }
 section#outil{
