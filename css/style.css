@@ -136,7 +136,7 @@ i.drop_on {
 \*----------------------------------------------------------------------------*/
 
 section#tagline {
-	margin: 0px 0px 20px 0px;
+	margin: 0px 0px 0px 0px;
 	background-image: url('../media/abstract.jpg');
 	background-size: 200% auto;
 	background-position: center;
@@ -267,9 +267,28 @@ section#vision article
 section#vision article p {
 	margin-top: 0px;
 }
-section#outil{
+section#possibilitees{
 	flex-direction: row;
 }
+
+section#accroche article
+{
+	padding: 30px;
+	margin-top
+}
+section#accroche
+{
+	background-color: red;
+}
+section#accroche article 
+{
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0px;
+	text-align: center;
+}
+
 /*----------------------------------------------------------------------------*\
 |       TEAM                                                                   |
 \*----------------------------------------------------------------------------*/
