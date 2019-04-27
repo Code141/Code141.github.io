@@ -127,6 +127,10 @@ li
 	z-index: 2000;
 }
 
+menu li:hover{
+	color: #00e1c6;
+}
+
 i.drop_on {
 	font-size: 40px;
 }
